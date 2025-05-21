@@ -224,6 +224,57 @@ html, body {
     box-shadow: 0 2px 12px rgba(44,49,66,0.07);
 }
 
+.main-footer {
+    background: var(--primary);
+    color: #fff;
+    padding: 1.5rem 0 0.7rem 0;
+    margin-top: 2rem;
+    border-top: 4px solid var(--highlight);
+    position: relative;
+    z-index: 2;
+}
+
+.main-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--highlight);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.footer-copy {
+    font-size: 0.95rem;
+    color: var(--subtitle);
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
 @media (max-width: 700px) {
     .header-flex, .about-grid, .moon-mission-details-grid {
         flex-direction: column;
@@ -241,5 +292,13 @@ html, body {
     .nav-list {
         flex-direction: column;
         gap: 0.7rem;
+    }
+    .main-footer .container {
+        gap: 0.5rem;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
     }
 }
